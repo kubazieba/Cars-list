@@ -1,0 +1,11 @@
+.modal-dialog {
+  margin-top: 120px !important;
+
+  @media (min-width: 1000px) {
+    margin-top: 240px !important;
+  }
+}
+
+.modal-body label {
+  color: #06090A;
+}

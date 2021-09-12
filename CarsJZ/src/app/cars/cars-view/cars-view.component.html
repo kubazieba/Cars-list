@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="overflow-auto">
+    <div class="cars-info mt-20-40">
+      Find a car
+    </div>
+    <div class="col-sm-6 mx-auto">
+      <input type="text" class="form-control" name="model" [(ngModel)]="model" (ngModelChange)="filterByModel()" placeholder="Filter by car model">
+    </div>
+    <table *ngIf="cars && cars.length > 0; else noCars" class="table table-dark table-hover mt-20-40">
+      <thead>
+        <tr>
+          <th class="col-sm-4" scope="col">Brand&nbsp;<i class="fa fa-sort" (click)="sort('brand')"></i></th>
+          <th class="col-sm-4" scope="col">Model&nbsp;<i class="fa fa-sort" (click)="sort('model')"></i></th>
+          <th class="col-sm-4" scope="col">Year&nbsp;<i class="fa fa-sort" (click)="sort('year')"></i></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let car of cars | orderBy: keyword: reverse | paginate: {itemsPerPage: 10, currentPage: page}" (click)="editCar(car)">
+          <td>{{car?.brand}}</td>
+          <td>{{car?.model}}</td>
+          <td>{{car?.year}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf="cars.length > 0" class="d-flex justify-content-center">
+    <pagination-controls previousLabel="" nextLabel="" max-size="5" (pageChange)="page = $event"></pagination-controls>
+  </div>
+  <ng-template #noCars>
+    <div class="no-cars-info mt-20-40">
+      No cars, please try check again later.
+    </div>
+  </ng-template>
+  <div class="form-container">
+    <form [formGroup]="carForm" (ngSubmit)="carForm.valid && addCar()">
+      <fieldset>
+        <legend>Add a new car</legend>
+        <div class="row mb-4">
+          <div class="col-sm-4 mb-10">
+            <label for="brand">Brand</label>
+            <input formControlName="brand" type="text" name="brand" id="brand" class="form-control" placeholder="Enter a brand" autocomplete="off">
+          </div>
+          <div class="col-sm-4 mb-10">
+            <label for="model">Model</label>
+            <input formControlName="model" type="text" name="model" id="model" class="form-control" placeholder="Enter a model" autocomplete="off">
+          </div>
+          <div class="col-sm-4 ">
+            <label for="year">Year*</label>
+            <input formControlName="year" min="1886" max="2021" type="number" name="year" id="year" class="form-control" placeholder="Enter a year" autocomplete="off">
+          </div>
+          <small class="form-text text-muted mt-4">*Value must be between 1886 and 2021</small>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 d-flex justify-content-center">
+            <a class="btn me-4" (click)="clearForm()">Clear form</a>
+            <button type="submit" class="btn" [disabled]="!carForm.valid">Add a car</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>

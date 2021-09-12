@@ -1,0 +1,29 @@
+<div class="modal-header bg-dark text-white">
+  <h4 class="modal-title" id="modal-basic-title">Change car data</h4>
+  <a class="btn m-0" (click)="modal.close('Cancel')">X</a>
+</div>
+<div class="modal-body">
+  <form [formGroup]="editCarForm" (ngSubmit)="editCarForm.valid && updateCar()">
+    <div class="row mb-4">
+      <div class="col-sm-4 mb-10">
+        <label for="brand">Brand</label>
+        <input formControlName="brand" type="text" name="brand" id="brand" class="form-control" placeholder="Enter a brand" autocomplete="off">
+      </div>
+      <div class="col-sm-4 mb-10">
+        <label for="model">Model</label>
+        <input formControlName="model" type="text" name="model" id="model" class="form-control" placeholder="Enter a model" autocomplete="off">
+      </div>
+      <div class="col-sm-4">
+        <label for="year">Year*</label>
+        <input formControlName="year" min="1886" max="2021" type="number" name="year" id="year" class="form-control" placeholder="Enter a year" autocomplete="off">
+      </div>
+      <small class="form-text text-muted mt-4">*Value must be between 1886 and 2021</small>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 d-flex justify-content-center">
+        <button [disabled]="!editCarForm.valid" class="btn btn-reverse me-4">Update</button>
+        <a class="btn btn-reverse" (click)="deleteCar(car)">Delete a car</a>
+      </div>
+    </div>
+  </form>
+</div>

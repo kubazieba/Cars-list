@@ -1,0 +1,137 @@
+[
+	{
+		"brand": "Volkswagen",
+		"model": "Touareg",
+		"year": 2021
+	},
+	{
+		"brand": "BMW",
+		"model": "M5",
+		"year": 2020
+	},
+	{
+		"brand": "Audi",
+		"model": "A3",
+		"year": 2009
+	},
+	{
+		"brand": "Ford",
+		"model": "Focus",
+		"year": 2012
+	},
+	{
+		"brand": "Citroen",
+		"model": "C4",
+		"year": 2010
+	},
+	{
+		"brand": "Dacia",
+		"model": "Duster",
+		"year": 2019
+	},
+	{
+		"brand": "Fiat",
+		"model": "Bravo",
+		"year": 2008
+	},
+	{
+		"brand": "Hyundai",
+		"model": "Tucson",
+		"year": 2020
+	},
+	{
+		"brand": "Kia",
+		"model": "Sportage",
+		"year": 2021
+	},
+	{
+		"brand": "Mercedes",
+		"model": "AMG",
+		"year": 2019
+	},
+	{
+		"brand": "Nissan",
+		"model": "Qashqai",
+		"year": 2018
+	},
+	{
+		"brand": "Opel",
+		"model": "Astra",
+		"year": 2014
+	},
+	{
+		"brand": "Peugeot",
+		"model": "3008",
+		"year": 2020
+	},
+	{
+		"brand": "Renault",
+		"model": "Escape",
+		"year": 2019
+	},
+	{
+		"brand": "Seat",
+		"model": "Ibiza",
+		"year": 2007
+	},
+	{
+		"brand": "Skoda",
+		"model": "Octavia",
+		"year": 2006
+	},
+	{
+		"brand": "Toyota",
+		"model": "Auris",
+		"year": 2018
+	},
+	{
+		"brand": "Volvo",
+		"model": "V60",
+		"year": 2019
+	},
+	{
+		"brand": "Alfa Romeo",
+		"model": "159",
+		"year": 2005
+	},
+	{
+		"brand": "Honda",
+		"model": "Civic",
+		"year": 2009
+	},
+	{
+		"brand": "Chevrolet",
+		"model": "Aveo",
+		"year": 2012
+	},
+	{
+		"brand": "Lexus",
+		"model": "NX 300h",
+		"year": 2020
+	},
+	{
+		"brand": "Mitsubishi",
+		"model": "Lancer",
+		"year": 2008
+	},
+	{
+		"brand": "Dogde",
+		"model": "Calliber",
+		"year": 2009
+	},
+	{
+		"brand": "Mazda",
+		"model": "CX-5",
+		"year": 2014
+	},
+	{
+		"brand": "Subaru",
+		"model": "Impreza",
+		"year": 2007
+	},
+	{
+		"brand": "Suzuki",
+		"model": "Swift",
+		"year": 2010
+	}
+]

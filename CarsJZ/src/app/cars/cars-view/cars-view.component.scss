@@ -1,0 +1,74 @@
+.mt-20-40 {
+  margin-top: 20px;
+
+  @media (min-width: 1000px) {
+    margin-top: 40px;
+  }
+}
+
+.no-cars-info {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 100px 0 80px;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+  }
+
+  @media (min-width: 1000px) {
+    padding: 130px 0 110px;
+  }
+}
+
+.cars-info {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+  }
+}
+
+table td {
+  cursor: pointer;
+}
+
+.form-container {
+  margin: 25px 0 90px;
+}
+
+.mb-10 {
+  @media (max-width: 575px) {
+    margin-bottom: 10px;
+  }
+}
+
+i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+i:nth-last-child(1) {
+  margin-left: 20px;
+}
+
+.ngx-pagination {
+  padding-left: 0;
+}
+
+.ngx-pagination .current,
+.btn-info {
+  background: #11DF82 !important;
+  border-radius: 4px !important;
+}
+
+.ngx-pagination a:hover, .ngx-pagination button:hover {
+  background: none !important;
+}
+
+.ngx-pagination a, .ngx-pagination button {
+  color: #FFF !important;
+}
