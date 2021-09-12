@@ -24,15 +24,14 @@ Recruitment task "Cars list" for Invisio - Digital Solutions.
 * Postman
 
 ## Setup
-Project cars-api You should open with "npm run start". Database is set as in-memory lb4, so at start You will have empty database. I prepared cars.json for run collection in Postman with:
-POST Request as localhost:3000/cars
-Raw as JSON like:
-{
-    "brand": "{{brand}}",
-    "model": "{{model}}",
-    "year": {{year}}
-}
-Next step is project CarsJZ. First You must install all dependencies from package.json with "npm install" command. Finally run command "ng serve".
+Project "cars-api" You should open with "npm run start". Database is set as in-memory lb4, so at start You will have empty database. I prepared cars.json for run collection in Postman with:<br><br>
+POST Request as "localhost:3000/cars" and raw as JSON like:<br><br>
+{<br>
+    "brand": "{{brand}}",<br>
+    "model": "{{model}}",<br>
+    "year": {{year}}<br>
+}<br><br>
+Next step is project "CarsJZ". First You must install all dependencies from package.json with "npm install" command. Finally run command "ng serve".
 
 ## Features
 Functionalities in the application:
